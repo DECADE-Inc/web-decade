@@ -7,8 +7,9 @@
     @vite('resources/css/app.css')
     <title>{{ $title }}</title>
 </head>
-<body>
+<body class="min-h-screen m-0 grid grid-rows-[auto_1fr_auto]">
     <x-navbar />
     {{ $slot }}
+    <x-footer />
 </body>
 </html>
