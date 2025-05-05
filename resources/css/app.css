@@ -1,11 +1,20 @@
 @import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+
+
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-Barlow-Semi-Condensed: "Barlow Semi Condensed", sans-serif;
+    --font-Hammersmith-One: "Hammersmith One", sans-serif;
+    --color-primary: #2DCDFF;
+    --color-lightGray: #909090;
+    --color-bg-secondary: #E3E3E3;
+}
+
+@layer base {
+    .img-shadow {
+        filter: drop-shadow(40px 10px 25px #2DCDFF);
+      }
 }
