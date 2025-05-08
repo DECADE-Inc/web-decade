@@ -9,7 +9,7 @@
     </a>
     <ul class="flex gap-6 uppercase text-lg bg-bg-secondary py-4 px-8 rounded-full">
         <li class="p-1 px-4 bg-white rounded-full"><a href="/">Beranda</a></li>
-        <li class="p-1 px-4"><a href="layanan">Layanan</a></li>
+        <li class="p-1 px-4"><a href="/layanan">Layanan</a></li>
         <li class="p-1 px-4"><a href="portofolio">Portofolio</a></li>
         <li class="p-1 px-4"><a href="tentang">Tentang</a></li>
         <li class="p-1 px-4"><a href="kontak">Kontak</a></li>
