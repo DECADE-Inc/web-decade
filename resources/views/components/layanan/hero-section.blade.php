@@ -1,4 +1,4 @@
-<section class="container mt-4 mx-auto max-h-screen font-Hammersmith-One">
+<section class="container mt-4 p-6 mx-auto max-h-screen font-Hammersmith-One">
     <div class="flex gap-32 justify-between items-center">
         <div>
             {{-- hero title --}}
@@ -23,7 +23,7 @@
         </div>
         {{-- hero image --}}
         <div class="relative">
-            <img src="/img/l-web.png" width="100%" alt="gambar hero">
+            <img src="/img/layanan/l-web.png" width="100%" alt="gambar hero">
 
         </div>
     </div>

@@ -1,8 +1,8 @@
-<section class="container mx-auto max-h-screen font-Hammersmith-One">
+<section class="container mt-4 p-6 mx-auto max-h-screen font-Hammersmith-One">
     <div class="flex gap-32 justify-between items-center">
         {{-- image --}}
         <div class="relative">
-            <img src="img/l-design.png" alt="">
+            <img src="img/layanan/l-design.png" alt="">
         </div>
 
         <div>
