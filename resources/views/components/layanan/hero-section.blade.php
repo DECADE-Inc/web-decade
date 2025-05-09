@@ -1,8 +1,8 @@
-<section class="container mt-4 p-6 mx-auto max-h-screen font-Hammersmith-One">
+<section class="font-Hammersmith-One">
     <div class="flex gap-32 justify-between items-center">
-        <div>
+        <div class="ml-35">
             {{-- hero title --}}
-            <div class="uppercase text-5xl font-bold leading-22">
+            <div class="uppercase text-7xl font-bold leading-22">
                 <span class="bg-black text-primary">wujudkan</span>
                 <div>website <span class="bg-black text-primary">anda</span></div>
                 <div>bersama <span class="bg-black text-primary">decade</span></div>

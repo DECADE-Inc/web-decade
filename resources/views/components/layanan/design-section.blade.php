@@ -1,12 +1,12 @@
-<section class="container mt-4 p-6 mx-auto max-h-screen font-Hammersmith-One">
+<section class="font-Hammersmith-One">
     <div class="flex gap-32 justify-between items-center">
         {{-- image --}}
         <div class="relative">
             <img src="img/layanan/l-design.png" alt="">
         </div>
 
-        <div>
-            <div class="uppercase text-5xl font-bold text-right leading-22">
+        <div class="mr-35">
+            <div class="uppercase text-7xl font-bold text-right leading-22">
                 <div><span class="bg-black text-primary">bingung</span> buat</div>
                 <span class="bg-black text-primary">desain grafis</span>
                 <div>untuk <span class="bg-black text-primary">promosi</span></div>
