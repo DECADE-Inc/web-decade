@@ -8,6 +8,7 @@ Route::get('/', function () {
 });
 Route::get('/kontak', [KontakController::class, 'showForm']);
 Route::post('/kontak', [KontakController::class, 'submitForm']);
-
-
+Route::get('/layanan', function () {
+    return view('layanan', ['title' => "Layanan"]);
+});
 
