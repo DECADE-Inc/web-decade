@@ -1,5 +1,5 @@
 <nav class="p-4 flex items-center gap-6 font-bold w-full">
-    <a class="font-Barlow-Semi-Condensed text-4xl mr-auto" href="/">
+    <a class="font-Barlow-Semi-Condensed dark:text-white text-4xl mr-auto" href="/">
         <span class="uppercase">
             Decade
         </span>
@@ -14,7 +14,16 @@
         <li class="p-1 px-4"><a href="tentang">Tentang</a></li>
         <li class="p-1 px-4"><a href="kontak">Kontak</a></li>
     </ul>
-    <div class="w-[150px] px-3 py-2 bg-black rounded-full flex justify-end ml-4">
-        <div class="rounded-full w-12 h-12 bg-white"></div>
-    </div>
+    <label class="relative inline-block w-20 h-12 cursor-pointer">
+        <input type="checkbox" data-theme-toggle aria-label="Change to light theme" class="sr-only peer"
+            id="theme-toggle" />
+        <!-- Background -->
+        <div class="block w-full h-full bg-black rounded-full peer-checked:bg-white transition-colors duration-300">
+        </div>
+
+        <!-- Thumb -->
+        <div
+            class="absolute top-1.5 right-1.5 w-9 h-9 rounded-full shadow-md transition-all duration-300 bg-white peer-checked:translate-x-[-2.25rem] peer-checked:bg-black flex items-center justify-center">
+        </div>
+    </label>
 </nav>

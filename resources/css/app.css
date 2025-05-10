@@ -4,14 +4,24 @@
 
 
 @theme {
-    --font-janger: 'Janger';
+    --font-janger: 'Janger', serif;
     --font-Barlow-Semi-Condensed: "Barlow Semi Condensed", sans-serif;
     --font-Hammersmith-One: "Hammersmith One", sans-serif;
     --color-primary: #2DCDFF;
     --color-lightGray: #909090;
+    --color-secondary: #000080;
     --color-bg-secondary: #E3E3E3;
 }
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
+@font-face {
+    font-family: Janger;
+    font-style: normal;
+    font-display: swap;
+    src: url('/public/fonts/janger.otf');
+}
 
 
 @layer base {

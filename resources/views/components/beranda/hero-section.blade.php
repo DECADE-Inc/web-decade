@@ -1,8 +1,8 @@
 <section class="container mt-4 mx-auto p-6 max-h-screen font-Hammersmith-One">
-    <div class="flex gap-32 justify-center items-center">
+    <div class="flex gap-32 justify-center items-center dark:text-white">
         <div>
             {{-- hero title --}}
-            <div class="uppercase text-5xl font-bold leading-22">
+            <div class="uppercase text-5xl font-bold leading-22 ">
                 <div>Menjadi <span class="bg-black text-primary">Pribadi</span></div>
                 <div>Yang <span class="bg-black text-primary">Mampu</span></div>
                 <div><span class="bg-black text-primary">Bersaing</span></div>
@@ -26,11 +26,10 @@
         {{-- hero image --}}
         <div class="relative">
             <img src="/img/hero-image.png" class="w-[280px] block img-shadow" alt="gambar hero">
-            <img src="/img/logo-komunitas-transparent.png" class="absolute -right-20 top-10 bottom-0 -z-10 opacity-60"
-                alt="logo komunitas">
+            
         </div>
     </div>
-    <div class="mt-8 w-fit mx-auto">
+    <div class="mt-8 w-fit mx-auto dark:text-white">
             <ul class="font-bold m-0 p-0 *:p-4  flex gap-4 justify-center">
                 <li>UI/UX</li>
                 <li>BACK-END</li>
