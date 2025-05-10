@@ -9,7 +9,7 @@
     </div>
     {{-- filosofi body --}}
     <div>
-        <div class="uppercase text-2xl font-bold leading-loose">
+        <div class="uppercase text-2xl font-bold leading-loose dark:text-white">
             <div>Makna dari logo yang</div>
             <div>berupa jam pasir</div>
             <div>mengartikan kami akan</div>

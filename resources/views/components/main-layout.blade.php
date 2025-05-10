@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     @vite('resources/css/app.css')
     <title>{{ $title }}</title>
 </head>
-<body class="min-h-screen m-0 grid grid-rows-[auto_1fr_auto]">
+
+<body class="min-h-screen m-0 grid grid-rows-[auto_1fr_auto] dark:bg-black">
     <x-navbar />
     {{ $slot }}
     <x-footer />
 </body>
+@vite('resources/js/main.js')
+
 </html>
