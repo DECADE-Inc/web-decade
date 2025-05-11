@@ -15,31 +15,27 @@
                     d="M1 1h15M1 7h15M1 13h15" />
             </svg>
         </button>
-        <div class="hidden w-full md:flex md:items-center md:gap-4 md:w-auto" id="navbar-default">
+        <div class="hidden w-full md:flex md:items-center md:w-auto" id="navbar-default">
             <ul
-                class="font-bold text-sm lg:text-base flex flex-col p-4 md:p-4 mt-4 border border-gray-100 rounded-lg md:rounded-full md:flex-row md:items-center md:space-x-4 lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                <li>
-                    <a href="/" class="block py-2 px-3 bg-black/30  text-black  rounded-full dark:text-white"
-                        aria-current="page">BERANDA</a>
-                </li>
-                <li>
-                    <a href="/layanan"
-                        class="block py-2 px-3  text-gray-900 rounded-sm md:border-0 md:p-0 dark:text-white">LAYANAN</a>
-                </li>
-                <li>
-                    <a href="/portofolio"
-                        class="block py-2 px-3  text-gray-900 rounded-sm md:border-0 md:p-0 dark:text-white">PORTOFOLIO</a>
-                </li>
-                <li>
-                    <a href="/tentang"
-                        class="block py-2 px-3  text-gray-900 rounded-sm md:border-0 md:p-0 dark:text-white">TENTANG</a>
-                </li>
-                <li>
-                    <a href="/kontak"
-                        class="block py-2 px-3  text-gray-900 rounded-sm md:border-0 md:p-0 dark:text-white">KONTAK</a>
-                </li>
+                class="font-bold text-sm lg:text-base space-x-0 flex flex-col p-4 mt-4 rounded-lg md:rounded-full md:flex-row md:items-center lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                <x-nav-link :active="request()->is('/')" href="/">
+                    BERANDA
+                </x-nav-link>
+                <x-nav-link :active="request()->is('layanan')" href="/layanan">
+                    LAYANAN
+                </x-nav-link>
+                <x-nav-link :active="request()->is('portofolio')" href="/portofolio">
+                    PORTOFOLIO
+                </x-nav-link>
+                <x-nav-link :active="request()->is('tentang')" href="/tentang">
+                    TENTANG
+                </x-nav-link>
+                <x-nav-link :active="request()->is('kontak')" href="/kontak">
+                    KONTAK
+                </x-nav-link>
+
             </ul>
-            <label class="relative hidden md:inline-block  w-16 h-8 cursor-pointer">
+            <label class="relative hidden md:inline-block w-16 h-8 cursor-pointer">
                 <input type="checkbox" data-theme-toggle aria-label="Change to light theme" class="sr-only peer"
                     id="theme-toggle" />
                 <!-- Background -->
