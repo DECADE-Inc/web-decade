@@ -1,8 +1,8 @@
-<section class="font-Hammersmith-One">
+<section class="container mx-auto font-Hammersmith-One">
     <div class="flex gap-32 justify-between items-center dark:text-cyan-400">
         <div class="ml-35">
             {{-- hero title --}}
-            <div class="uppercase text-7xl font-bold leading-22">
+            <div class="uppercase text-4xl font-bold leading-loose">
                 <span class="bg-black text-primary dark:text-black dark:bg-white">wujudkan</span>
                 <div>website <span class="bg-black text-primary dark:text-black dark:bg-white">anda</span></div>
                 <div>bersama <span class="bg-black text-primary dark:text-black dark:bg-white">decade</span></div>
@@ -22,9 +22,8 @@
             </a>
         </div>
         {{-- hero image --}}
-        <div class="relative">
+        <div>
             <img src="/img/layanan/l-web.png" width="100%" alt="gambar hero">
-
         </div>
     </div>
 </section>

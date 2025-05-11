@@ -1,30 +1,27 @@
-<section class="mt-8 mx-auto container p-6 font-Hammersmith-One flex gap-16 place-content-center mb-16">
+<section
+    class="mt-52 sm:mt-24 mx-auto container p-6 font-Hammersmith-One flex flex-col md:flex-row gap-14 md:gap-19 place-items-center  md:place-content-center max-w-screen-xl">
     {{-- filosofi image --}}
-    <div class="w-[450px] h-[340px] flex place-content-center bg-gradient-to-b from-[#9E9C9C] to-[#383838] relative">
-        <div class="w-16 h-16 bg-primary absolute -top-5 -left-5 -z-10"></div>
-        <div class="w-16 h-16 bg-primary absolute -top-5 -right-5 -z-10"></div>
-        <div class="w-16 h-16 bg-primary absolute -bottom-5 -right-5 -z-10"></div>
-        <div class="w-16 h-16 bg-primary absolute -bottom-5 -left-5 -z-10"></div>
-        <img src="/img/logo-komunitas-transparent.png" class="w-32 block object-contain" alt="">
+    <div
+        class="min-w-[250px] min-h-[280px] lg:min-w-[350px] lg:min-h-[280px]  flex place-content-center bg-gradient-to-b from-[#9E9C9C] to-[#383838] relative">
+        <div class="w-14 h-14 bg-primary absolute -top-5 -left-5 -z-10"></div>
+        <div class="w-14 h-14 bg-primary absolute -top-5 -right-5 -z-10"></div>
+        <div class="w-14 h-14 bg-primary absolute -bottom-5 -right-5 -z-10"></div>
+        <div class="w-14 h-14 bg-primary absolute -bottom-5 -left-5 -z-10"></div>
+        <img src="/img/logo-komunitas-transparent.png" class="w-1/3 block object-contain" alt="">
     </div>
     {{-- filosofi body --}}
     <div>
-        <div class="uppercase text-2xl font-bold leading-loose dark:text-white">
+        <div class="uppercase text-xl sm:text-2xl font-bold leading-loose dark:text-white">
             <div>Makna dari logo yang</div>
             <div>berupa jam pasir</div>
             <div>mengartikan kami akan</div>
             <div>abadi seperti teknologi</div>
             <div>itu sendiri.</div>
         </div>
-        <div class="text-lightGray leading-tight">
+        <div class="text-lightGray leading-tight text-sm sm:text-base mb-4">
             <p>ANDA BISA MENGUNJUNGI CHANEL YOUTUBE KAMI JIKA</p>
             <p>INGIN MENGENAL KAMI LEBIH DALAM LAGI.</p>
         </div>
-        <a class="text-lg font-bold flex gap-2 items-center mt-4 justify-end" href="layanan">
-            <div class="py-2 px-4 border rounded-full">JELAJAHI</div>
-            <div class="p-2 rounded-full bg-black text-white w-fit">
-                <x-heroicon-s-arrow-up class="w-6 h-6 rotate-[30deg]" />
-            </div>
-        </a>
+        <x-tombol-jelajah href="tentang" />
     </div>
 </section>

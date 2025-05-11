@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <title>{{ $title }}</title>
 </head>
 
-<body class="min-h-screen m-0 grid grid-rows-[auto_1fr_auto] dark:bg-black">
+<body class="dark:bg-black">
     <x-navbar />
     {{ $slot }}
     <x-footer />
