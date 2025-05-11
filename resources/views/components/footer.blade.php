@@ -1,50 +1,36 @@
-<footer class="bg-[#919191] w-full py-8">
-    <div class="grid grid-cols-3 place-items-center">
-        {{-- left-side --}}
-        <div class="text-white text-lg font-bold">
-            <ul>
-                <li><a href="/">Beranda</a></li>
-                <li><a href="layanan">Layanan</a></li>
-                <li><a href="portofolio">Portofolio</a></li>
-                <li><a href="tentang">Tentang</a></li>
-                <li><a href="kontak">Kontak</a></li>
-            </ul>
-
-        </div>
-        {{-- middle side --}}
-        <div>
-            <img class="w-32" src="/img/logo-komunitas-transparent.png" alt="">
-        </div>
-        {{-- right side --}}
-        <div>
-            <a class="font-Barlow-Semi-Condensed font-bold text-4xl mr-auto mb-1 block" href="/">
-                <span class="uppercase">
-                    Decade
-                </span>
-                <span class="text-2xl">
-                    inc
-                </span>
-            </a>
-            <div class="flex gap-1 mb-4">
-                <a href="">
-                    <img src="/icons/instagram.svg" alt="instagram icon">
-                </a>
-                <a href="">
-                    <img src="/icons/youtube.svg" alt="youtube icon">
-                </a>
-                <a href="">
-                    <img src="/icons/tiktok.svg" alt="tiktok icon">
-                </a>
+<footer class="flex flex-col items-center bg-[#919191] text-left text-surface dark:bg-neutral-700 dark:text-white">
+    <div class="container p-6">
+        <div class="grid gap-4 sm:grid-cols-2 items-center sm:justify-items-center">
+            <div class="mx-auto mb-6 md:mb-0 flex justify-center order-1 sm:order-2">
+                <img src="/img/logo-komunitas-transparent.png" class="block w-1/3 md:w-1/2" alt="">
             </div>
-            <div class="text-lg font-bold">
-                <h5>Kontak Kami</h5>
-                <p class="text-white">0812345678910</p>
-            </div>
-            <div class="text-lg font-bold">
-                <h5>Email</h5>
-                <p class="text-white">decadedotinc@gmail.com</p>
+            <div class="mb-6 md:mb-0 order-2 sm:order-1  ">
+                <h5 class="mb-2 text-2xl font-bold">DECADE <span>inc</span></h5>
+                <div class="flex gap-1 mb-4">
+                    <a href="">
+                        <img src="/icons/instagram.svg" alt="instagram icon">
+                    </a>
+                    <a href="">
+                        <img src="/icons/youtube.svg" alt="youtube icon">
+                    </a>
+                    <a href="">
+                        <img src="/icons/tiktok.svg" alt="tiktok icon">
+                    </a>
+                </div>
+                <div class="text-lg font-semibold">
+                    <h5>Kontak Kami</h5>
+                    <p class="text-white">0812345678910</p>
+                </div>
+                <div class="text-lg font-semibold">
+                    <h5>Email</h5>
+                    <p class="text-white">decadedotinc@gmail.com</p>
+                </div>
             </div>
         </div>
     </div>
-    <h5 class="text-center font-bold mt-16">Copyright © Decade Inc. All Rights Reserved.</h5>
+
+    <!--Copyright section-->
+    <div class="w-full bg-black/5 p-4 text-center font-bold">
+        Copyright © Decade Inc. All Rights Reserved
+    </div>
 </footer>
