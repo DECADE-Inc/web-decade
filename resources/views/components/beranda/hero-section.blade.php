@@ -1,4 +1,4 @@
-<section class="mt-16 mx-auto p-6 max-w-s max-h-screen max-w-screen-xl font-Hammersmith-One">
+<section class="mt-34 mx-auto p-6 max-w-s max-h-screen max-w-screen-xl font-Hammersmith-One">
     <div class="flex flex-col-reverse gap-6 sm:flex-row md:gap-8  justify-center items-center dark:text-white">
         <div>
             {{-- hero title --}}

@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
 
 
 @theme {
