@@ -1,33 +1,36 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 @plugin "flowbite/plugin";
 @source "../../node_modules/flowbite";
 
-
 @theme {
-    --font-janger: 'Janger', serif;
+    --font-janger: "Janger", serif;
     --font-Barlow-Semi-Condensed: "Barlow Semi Condensed", sans-serif;
     --font-Hammersmith-One: "Hammersmith One", sans-serif;
-    --color-primary: #2DCDFF;
+    --color-primary: #2dcdff;
     --color-lightGray: #909090;
     --color-secondary: #000080;
-    --color-bg-secondary: #E3E3E3;
+    --color-bg-secondary: #e3e3e3;
 }
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
 
 @font-face {
     font-family: Janger;
     font-style: normal;
     font-display: swap;
-    src: url('/public/fonts/janger.otf');
+    src: url("/public/fonts/janger.otf");
 }
-
 
 @layer base {
     .img-shadow {
-        filter: drop-shadow(40px 10px 25px #2DCDFF);
-      }
+        filter: drop-shadow(40px 10px 25px #2dcdff);
+    }
+
+    .input-shadow {
+        border-radius: 50px;
+        background: #e0e0e0;
+        box-shadow: 6px 6px 11px #cecece, -6px -6px 11px #f2f2f2;
+    }
 }

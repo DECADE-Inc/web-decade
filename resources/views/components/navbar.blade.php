@@ -1,5 +1,5 @@
 <nav
-    class="m-4 fixed top-0 left-0 right-0 z-20 bg-white rounded-xl drop-shadow-2xl border border-gray-200 dark:border-none dark:bg-black dark:drop-shadow-white/40 dark:drop-shadow-lg">
+    class="m-4 fixed top-0 left-0 right-0 z-20 bg-white rounded-xl drop-shadow-lg border border-gray-200 dark:border-none dark:bg-black dark:drop-shadow-white/40 dark:drop-shadow-lg">
     <div class="max-w-screen-xl flex flex-wrap items-center  mx-auto px-4 py-2">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse font-Barlow-Semi-Condensed mr-auto">
             <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">DECADE <span
@@ -45,7 +45,7 @@
 
                 <!-- Thumb -->
                 <div
-                    class="absolute top-1.5 right-1.5  w-5 h-5 rounded-full shadow-md transition-all duration-300 bg-white peer-checked:translate-x-[-2.25rem] peer-checked:bg-black flex items-center justify-center">
+                    class="absolute top-1.5 right-1.5  w-5 h-5 rounded-full shadow-md bg-white peer-checked:translate-x-[-2.25rem] peer-checked:bg-black flex items-center justify-center">
                 </div>
             </label>
         </div>
