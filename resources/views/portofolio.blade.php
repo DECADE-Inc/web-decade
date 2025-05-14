@@ -1,44 +1,50 @@
 <x-main-layout>
     <x-slot:title>Portofolio</x-slot:title>
 
-    <section id="portofolio" class="py-16 lg:px-20 md:px-10 sm:px-5 bg-gray-100 dark:bg-gray-900">
-        <div class="container mx-auto px-4">
-            <div class="mb-12 text-center" font-Hammersmith-One>
-                <h2 class="text-5xl font-bold text-gray-800 dark:text-gray-100 mb-4">Portofolio Kami</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-400">
-                    Jelajahi proyek-proyek terbaru kami yang menampilkan keahlian dan semangat kami dalam menciptakan solusi perangkat lunak yang luar biasa.
-                </p>
+    <div class="flex flex-col">
+        <!-- Hero Section -->
+        <section class="w-screen h-screen flex flex-col justify-center items-center space-y-15 bg-cover font-Montserrat" style="background-image: url({{asset('/img/portofolio/hero-background.png')}});">
+            <div class="max-w-165 flex flex-col items-center text-center mt-20">
+                <span class="text-white text-6xl md:text-[110px] font-extrabold">Portofolio</span>
+                <span class="text-white text-xl/6 md:text-2xl/7 font-medium">Setiap karya dan proyek adalah hasil kolaborasi, eksplorasi ide, dan dedikasi untuk terus berkembang</span>
             </div>
+            <a class="text-lg font-bold flex gap-2 items-center" href="/layanan">
+                <div class="h-12 w-44 text-xl border rounded-full bg-white flex justify-center items-center">JELAJAHI</div>
+                <div class="p-2 rounded-full bg-white w-fit">
+                    <x-heroicon-s-arrow-up class="w-6 h-6 rotate-[30deg]" />
+                </div>
+            </a>
+        </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                @foreach ($portofolio_list as $index => $p)
+        <!-- Portofolio Slider Section -->
+        <section class="w-screen h-screen font-Montserrat flex items-center">
+            <div class="glide overflow-hidden">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        @foreach ($portofolio_list as $index => $portofolio)
+                        <li class="glide__slide flex justify-center items-center">
+                            <div class="h-126 w-91 bg-white dark:bg-[#383838] rounded-2xl shadow-[9px_9px_21px_3px_#00000040] dark:shadow-[9px_9px_21px_3px_#00F6FF40] transition duration-300 flex flex-col my-15">
+                                <img src="{{ $portofolio['img'] }}" alt="Proyek {{ $index }}" class="w-full h-65 object-cover object-top bg-[#D9D9D9] dark:bg-[#797979] rounded-t-2xl">
+                                <div class="p-4 flex flex-col">
+                                    <h3 class="text-[26px] font-bold dark:text-white mb-2">{{ $portofolio['judul'] }}</h3>
+                                    <p class="h-30 text-[16px] font-medium text-justify dark:text-white mb-4 overflow-hidden">
+                                        {{ $portofolio['deskripsi'] }}
+                                    </p>
+                                    <a href="{{ $portofolio['url'] }}" class="self-end text-[16px] font-medium text-[#0063BF] hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500">Lihat Selengkapnya</a>
+                                </div>
+                            </div>
+                        </li>
+                        @endforeach
+                    </ul>
 
-                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-                    <img src="{{$p['img']}}" alt="Proyek {{$index}}" class="w-full h-48 object-cover object-top">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">{{$p['judul']}}</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
-                            {{$p['deskripsi']}}
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-gray-500 dark:text-gray-300 text-xs">{{$p['tag']}}</span>
-                            <a href="{{$p['url']}}" class="text-indigo-600 dark:text-indigo-400 hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500">Lihat Detail</a>
-                        </div>
+                    <div class="glide__bullets flex justify-center gap-2" data-glide-el="controls[nav]">
+                        @foreach ($portofolio_list as $index => $portofolio)
+                        <button id="glide-bullet-{{ $index }}" class="glide__bullet w-4 h-4 rounded-full bg-[#828282]" data-glide-dir="={{ $index }}"></button>
+                        @endforeach
                     </div>
                 </div>
-
-                @endforeach
             </div>
-
-            <div class="mt-12 text-center">
-                <p class="text-lg text-gray-600 dark:text-gray-400 mb-4">
-                    Siap mendiskusikan proyek Anda?
-                </p>
-                <a href="#" class="inline-block bg-indigo-600 dark:bg-indigo-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-indigo-700 dark:hover:bg-indigo-600 transition duration-300">
-                    Hubungi Kami
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 </x-main-layout>
