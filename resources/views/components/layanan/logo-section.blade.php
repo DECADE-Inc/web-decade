@@ -1,6 +1,6 @@
 <section class="mt-10 mb-10 px-4">
     <!-- Judul -->
-    <div class="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug text-center dark:text-cyan-400">
+    <div class="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-snug lg:leading-[5.5rem] text-center dark:text-cyan-400">
         <div>ingin <span class="bg-black text-primary dark:text-black dark:bg-white">membuat logo</span> yang</div>
         <div>menggambarkan <span class="bg-black text-primary dark:text-black dark:bg-white">kualitas</span></div>
         <div>kami <span class="bg-black text-primary dark:text-black dark:bg-white">buatkan</span></div>
