@@ -1,4 +1,4 @@
-<footer class="flex flex-col items-center bg-[#919191] text-left text-surface dark:bg-neutral-700 dark:text-white">
+<footer class="flex flex-col items-center bg-[#919191] text-left text-surface">
     <div class="container p-6">
         <div class="grid gap-4 sm:grid-cols-2 items-center sm:justify-items-center">
             <div class="mx-auto mb-6 md:mb-0 flex justify-center order-1 sm:order-2">
