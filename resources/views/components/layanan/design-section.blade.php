@@ -1,5 +1,5 @@
 <section class="font-Hammersmith-One px-4 py-8">
-    <div class="flex flex-col lg:flex-row gap-12 lg:gap-32 items-center justify-between dark:text-cyan-400">
+    <div class=" container mx-auto flex flex-col lg:flex-row gap-12 lg:gap-32 items-center justify-between dark:text-cyan-400">
         <!-- Gambar -->
         <div class="relative w-full lg:w-1/2">
             <img src="img/layanan/l-design.png" alt="gambar desain" class="w-full h-auto object-contain">
